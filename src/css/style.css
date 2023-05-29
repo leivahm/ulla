@@ -13,6 +13,10 @@
     --transition: all 300ms ease;
 }
 
+#encabeza {
+    background-color: var(--color-primary);
+}
+
 section.landing {
     display: grid;
     place-items: center;
@@ -23,7 +27,7 @@ section.landing {
 }
 
 section.landing .container {
-    /* background: #29f5a6; */
+    background: #29f5a6;
     display: grid;
     grid-template-columns: 5rem auto 26rem;
     gap: 2rem;
@@ -68,129 +72,6 @@ section.landing .info p {
     width: 35rem;
 }
 
-section.landing .profile-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-section.landing .profile-area .outer-circle {
-    width: 26rem;
-    height: 26rem;
-    border: 1px solid var(--color-primary);
-    border-radius: 50%;
-    position: relative;
-    animation: move 30s linear infinite;
-}
-
-@keyframes move {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-section.landing .profile-area .outer-circle span {
-    display: block;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    position: absolute;
-    background: var(--color-white);
-    color: var(--color-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 1rem var(--color-primary-light);
-}
-
-section.landing .profile-area .outer-circle span:nth-child(1) {
-    left: calc(50% - 2rem);
-    top: -2rem;
-}
-
-section.landing .profile-area .outer-circle span:nth-child(2) {
-    right: -2rem;
-    top: calc(50% - 2rem);
-}
-
-section.landing .profile-area .outer-circle span:nth-child(3) {
-    left: -2rem;
-    top: calc(50% - 2rem);
-}
-
-section.landing .profile-area .outer-circle span:nth-child(4) {
-    bottom: -2rem;
-    left: calc(50% - 2rem);
-}
-
-section.landing .profile-area .inner-circle {
-position: absolute;
-width: 21rem;
-height: 21rem;
-border-radius: 50%;
-overflow: hidden;
-}
-
-section.landing .profile-area-b {
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-}
-
-section.landing .profile-area-b .outer-circle {
-    width: 26rem;
-    height: 26rem;
-    border: 1px solid var(--color-primary);
-    border-radius: 50%;
-    position: relative;
-    animation: move 30s linear infinite;
-}
-
-section.landing .profile-area-b .outer-circle span {
-    display: block;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    position: absolute;
-    background: var(--color-white);
-    color: var(--color-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 1rem var(--color-primary-light);
-}
-
-section.landing .profile-area-b .outer-circle span:nth-child(1) {
-    left: calc(50% - 2rem);
-    top: -2rem;
-}
-
-section.landing .profile-area-b .outer-circle span:nth-child(2) {
-    right: -2rem;
-    top: calc(50% - 2rem);
-}
-
-section.landing .profile-area-b .outer-circle span:nth-child(3) {
-    left: -2rem;
-    top: calc(50% - 2rem);
-}
-
-section.landing .profile-area-b .outer-circle span:nth-child(4) {
-    bottom: -2rem;
-    left: calc(50% - 2rem);
-}
-
-section.landing .profile-area-b .inner-circle {
-position: absolute;
-width: 21rem;
-height: 21rem;
-border-radius: 50%;
-overflow: hidden;
-}
-
-section.landing .profile-area-b {
-    display: none;
-}
 
 /* ================ MINE SECTION ================ */
 
