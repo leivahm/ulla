@@ -42,16 +42,6 @@
 /* END ADMINISTRA SECTION */
 
 
-section.landing {
-    display: grid;
-    place-items: center;
-    position: relative;
-    top: 5rem;
-    padding-bottom: 14rem;
-
-}
-
-
 
 
 /* ================ MINE SECTION ================ */
