@@ -57,7 +57,7 @@
 
         <div class="row">
             <div class="col">
-                
+
             </div>
             <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3 text-left ms-5">
                 <h5>
@@ -117,39 +117,52 @@
       </div>
     <!-- FIN DE CARRUSEL -->
 
-
-    <!-- <section class="landing">
-
-        <div class="container ">
-
-            <div class="socials">
-                    <a href="https://facebook.com/" target="_blank"><i class="uil uil-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="uil uil-instagram-alt"></i></a>
-                    <a href="https://twitter.com/" target="_blank"><i class="uil uil-twitter"></i></a>
-                    <a href="#"><i class="uil uil-bars"></i></a>
-            </div>
-
-            <div class="info">
-
-                <h1>Administración de Propiedades</h1>
-                <h3>Tenemos una propuesta para cada necesidad</h3>
-
-                <p>• Asesoramiento de Inversiones Inmobiliarias.
-                    <br>• Administración de Propiedades.
-                    <br>• Venta y Alquiler de Inmuebles.
-                    <br>• Servicio de Tasación.
-                    <br>• Administración de Cuentas Morosas.
-                    <br><h3 style="color: rgb(167, 15, 210);">• VER SI ES POSIBLE LA INTRODUCCIÓN DE UN CAROUSEL SIN MODIFICAR LA ESTRUCTURA ACTUAL</h3>
-                </p>
-                <div class="text-center">
-                    <a href="https://wa.me/+5493516373000?text=Hola,%20quiero%20hacer%20una%20consulta" class="btn btn-success uil uil-whatsapp" target="_blank"> Hablemos</a>
-                </div>
-
-            </div>
-
+    <!-- MAPA -->
+    <div id="mapa" class="text-center">
+        <div class="p-4">
+            <h2>Nuestra Ubicación</h2>
         </div>
-    </section> -->
+        <div class="">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.9281578116393!2d-64.2205329032104!3d-31.41610539999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329885aa10b977%3A0xbb58602f125e6!2sNestor%20Ulla%20Inmobiliaria%20(0351)%204890777%20-%20156373000%20Administraci%C3%B3n-Declaratorias%20de%20Herederos!5e0!3m2!1ses-419!2sar!4v1685412998688!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!-- FIN MAPA -->
+
+    <!-- FOOTER -->
+    <div class="card text-center mt-3">
+        <div class="card-header">
+          <p id="fecha" class="mt-4"></p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Néstor Ulla Inmobiliaria</h5>
+          <p class="card-text">Excelencia inmobiliaria, soluciones integrales.</p>
+          <a href="https://wa.me/+5493516373000?text=Hola,%20quiero%20hacer%20una%20consulta" target="_blank" class="btn btn-success uil uil-whatsapp" > Escribinos</a>
+        </div>
+        <div class="card-footer text-body-secondary">
+          ©milenio3
+        </div>
+      </div>
+      <!-- FIN FOOTER -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <script>
+        // Obtener la referencia al elemento <p> donde se mostrará la fecha
+        var fechaElemento = document.getElementById("fecha");
+    
+        // Obtener la fecha actual
+        var fechaActual = new Date();
+    
+        // Formatear la fecha para mostrarla
+        var formatoFecha = {
+          year: "numeric",
+          month: "long",
+          day: "numeric"
+        };
+    
+        // Actualizar el contenido del elemento <p> con la fecha formateada
+        fechaElemento.textContent = fechaActual.toLocaleDateString(undefined, formatoFecha);
+      </script>
+    
   </body>
 </html>

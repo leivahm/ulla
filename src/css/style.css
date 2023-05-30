@@ -41,8 +41,16 @@
 }
 /* END ADMINISTRA SECTION */
 
+/* MAPA SECTION */
+#mapa {
+    background-color: var(--color-light);
+    margin-top: 1rem;
+}
+/* FIN MAPA SECTION */
 
+/* FOOTER */
 
+/* FIN FOOTER */
 
 /* ================ MINE SECTION ================ */
 
