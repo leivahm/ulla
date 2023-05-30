@@ -13,6 +13,7 @@
     --transition: all 300ms ease;
 }
 
+/* ALL DOC SETUP */
 * {
     margin: 0;
     padding: 0;
@@ -21,16 +22,25 @@
     box-sizing: border-box; /*para que los elementos no se salgan del contenedor*/
     /* list-style: none; para que no aparezcan los puntitos en las listas  */
     text-decoration: none;
+    color: var(--color-black);
 }
+/* END ALL DOC SETUP */
 
+/* COMPANY LOGO */
 #encabeza {
     background-color: var(--color-primary);
+    margin-bottom: 1rem;
 }
+/* END COMPANY LOGO */
 
-section.administra {
-    margin-top: 5rem;
+/* ADMINISTRA SECTION */
+#administra {
+    /* margin-top: rem; */
     background-color: var(--color-light);
+    margin-bottom: 1rem;
 }
+/* END ADMINISTRA SECTION */
+
 
 section.landing {
     display: grid;
@@ -38,54 +48,10 @@ section.landing {
     position: relative;
     top: 5rem;
     padding-bottom: 14rem;
-    
+
 }
 
-section.landing .container {
-    background: #29f5a6;
-    display: grid;
-    grid-template-columns: 5rem auto 26rem;
-    gap: 2rem;
-}
 
-section.landing .socials {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    margin-top: 5rem;
-}
-
-section.landing .socials a{
-    font-size: 1.1rem;
-    background: var(--color-light);
-    color: var(--color-dark);
-    padding: 0.3rem;
-    border-radius: 50%;
-    height: 2rem;
-    width: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: var(--transition);
-}
-
-section.landing .socials a:hover {
-    background: var(--color-primary);
-    color: var(--color-white);
-}
-
-section.landing .info h1 {
-    text-align: left;
-    margin: 0;
-}
-
-section.landing h3 {
-    margin: 2.4rem 0 1rem;
-}
-
-section.landing .info p {
-    width: 35rem;
-}
 
 
 /* ================ MINE SECTION ================ */
